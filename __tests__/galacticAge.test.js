@@ -52,10 +52,13 @@ describe('GalacticAge', () => {
     expect(inputAge.yearsSinceJupiter(25)).toEqual(.84);
   });
 
-  test('should correctly calculate the number of years which have yet to come until a given age value', () => {
-    expect(inputAge.yearsToCome(46)).toEqual(11);
+  test('should correctly calculate the number of years which have yet to pass until a given age value', () => {
+    expect(inputAge.yearsYetToPass(46)).toEqual(11);
   });
 
+  test('should correctly calculate the number of years which have yet to pass on Mercury until a given age value', () => {
+    expect(inputAge.yearsYetToPassOnMercury(46)).toEqual(45.83);
+  });
 
 
 

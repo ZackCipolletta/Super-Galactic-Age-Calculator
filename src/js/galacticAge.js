@@ -47,11 +47,13 @@ export default class GalacticAge {
     return yearsSinceJupiter.ageOnJupiter();
   }
 
-  yearsToCome(laterAge) {
+  yearsYetToPass(laterAge) {
     return Number((laterAge - this.age).toFixed(2));
   }
 
+  yearsYetToPassOnMercury(laterAge){
 
+  }
 
 
 
