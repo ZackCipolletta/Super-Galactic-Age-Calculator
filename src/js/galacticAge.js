@@ -33,6 +33,10 @@ export default class GalacticAge {
     return Number((yearsSince / .62).toFixed(2));
   } 
 
+  yearsSinceMars(earlierAge) {
+
+  } 
+
 
 
 

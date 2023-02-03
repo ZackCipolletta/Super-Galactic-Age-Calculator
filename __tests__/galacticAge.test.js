@@ -44,6 +44,9 @@ describe('GalacticAge', () => {
     expect(inputAge.yearsSinceVenus(25)).toEqual(16.13);
   });
 
+  test('should correctly calculate the number of years which have past on Mars since a given age value', () => {
+    expect(inputAge.yearsSinceMars(25)).toEqual(5.32);
+  });
 
 
 
