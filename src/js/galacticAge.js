@@ -48,7 +48,7 @@ export default class GalacticAge {
   }
 
   yearsToCome(laterAge) {
-
+    return Number((laterAge - this.age).toFixed(2));
   }
 
 
