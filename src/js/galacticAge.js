@@ -23,6 +23,9 @@ export default class GalacticAge {
     return Number((this.age - earlierAge).toFixed(2));
   }
 
+  yearsSinceMercury(earlierAge) {
+
+  }
 
 
 
