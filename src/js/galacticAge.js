@@ -8,7 +8,7 @@ export default class GalacticAge {
   }
 
   ageOnVenus() {
-    
+    return Number((this.age / .62).toFixed(2));
   }
 
 
