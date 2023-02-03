@@ -24,6 +24,14 @@ describe('GalacticAge', () => {
     expect(inputAge.ageOnMars()).toEqual(18.62);
   });
 
+  test('should correctly determine age on Mercury using a given age value', () => {
+    expect(inputAge.ageOnJupiter()).toEqual(2.95);
+  });
+
+
+
+
+
   //   test('should correctly determine whether three lengths are not a triangle', () => {
   //     const notTriangle = new Triangle(3, 9, 22);
   //     expect(notTriangle.checkType()).toEqual("not a triangle");

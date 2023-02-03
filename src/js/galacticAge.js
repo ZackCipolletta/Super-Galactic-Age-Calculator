@@ -12,9 +12,12 @@ export default class GalacticAge {
   }
 
   ageOnMars() {
-
+    return Number((this.age / 1.88).toFixed(2));
   }
 
+  ageOnJupiter() {
+
+  }
 
 
 
