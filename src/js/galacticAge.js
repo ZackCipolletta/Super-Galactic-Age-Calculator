@@ -24,33 +24,35 @@ export default class GalacticAge {
   }
 
   yearsSinceMercury(earlierAge) {
-    let yearsSince = this.yearsSince(earlierAge);
-     let ageSinceMercury = new GalacticAge(yearsSince);
-     return ageSinceMercury.ageOnMercury();
-  } 
+    let yearsSinceEarlierAge = this.yearsSince(earlierAge);
+    let yearsSinceOnMercury = new GalacticAge(yearsSinceEarlierAge);
+    return yearsSinceOnMercury.ageOnMercury();
+  }
 
   yearsSinceVenus(earlierAge) {
-    let yearsSince = this.age - earlierAge;
-    return Number((yearsSince / .62).toFixed(2));
-  } 
+    let yearsSinceEarlierAge = this.yearsSince(earlierAge);
+    let yearsSinceVenus = new GalacticAge(yearsSinceEarlierAge);
+    return yearsSinceVenus.ageOnVenus();
+  }
 
   yearsSinceMars(earlierAge) {
-    let yearsSince = this.age - earlierAge;
-    return Number((yearsSince / 1.88).toFixed(2));
-  } 
+    let yearsSinceEarlierAge = this.yearsSince(earlierAge);
+    let yearsSinceMars = new GalacticAge(yearsSinceEarlierAge);
+    return yearsSinceMars.ageOnMars();
+  }
 
 
 
 
-//   checkType() {
-//     if ((this.side1 > (this.side2 + this.side3)) || (this.side2 > (this.side1 + this.side3)) || (this.side3 > (this.side1 + this.side2))) {
-//       return "not a triangle";
-//     } else if ((this.side1 !== this.side2) && ((this.side1 !== this.side3)) && ((this.side2 !== this.side3))) {
-//       return "scalene triangle";
-//     } else if ((this.side1 === this.side2) && (this.side1 === this.side3)) {
-//       return "equilateral triangle";
-//     } else {
-//       return "isosceles triangle";
-//     }
-//   }
+  //   checkType() {
+  //     if ((this.side1 > (this.side2 + this.side3)) || (this.side2 > (this.side1 + this.side3)) || (this.side3 > (this.side1 + this.side2))) {
+  //       return "not a triangle";
+  //     } else if ((this.side1 !== this.side2) && ((this.side1 !== this.side3)) && ((this.side2 !== this.side3))) {
+  //       return "scalene triangle";
+  //     } else if ((this.side1 === this.side2) && (this.side1 === this.side3)) {
+  //       return "equilateral triangle";
+  //     } else {
+  //       return "isosceles triangle";
+  //     }
+  //   }
 }
