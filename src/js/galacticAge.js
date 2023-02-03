@@ -3,6 +3,10 @@ export default class GalacticAge {
     this.age = age;
   }
 
+  ageMercury() {
+
+  }
+
 
 //   checkType() {
 //     if ((this.side1 > (this.side2 + this.side3)) || (this.side2 > (this.side1 + this.side3)) || (this.side3 > (this.side1 + this.side2))) {
