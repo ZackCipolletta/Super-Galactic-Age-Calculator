@@ -16,15 +16,15 @@ describe('GalacticAge', () => {
     expect(inputAge.ageOnMercury()).toEqual(145.83);
   });
 
-  test('should correctly determine age on Mercury using a given age value', () => {
+  test('should correctly determine age on Venus using a given age value', () => {
     expect(inputAge.ageOnVenus()).toEqual(56.45);
   });
 
-  test('should correctly determine age on Mercury using a given age value', () => {
+  test('should correctly determine age on Mars using a given age value', () => {
     expect(inputAge.ageOnMars()).toEqual(18.62);
   });
 
-  test('should correctly determine age on Mercury using a given age value', () => {
+  test('should correctly determine age on Jupiter using a given age value', () => {
     expect(inputAge.ageOnJupiter()).toEqual(2.95);
   });
 
