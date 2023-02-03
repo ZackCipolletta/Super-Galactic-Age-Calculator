@@ -47,6 +47,15 @@ export default class GalacticAge {
     return yearsSinceJupiter.ageOnJupiter();
   }
 
+  yearsToCome(laterAge) {
+
+  }
+
+
+
+
+
+
 
 
   //   checkType() {

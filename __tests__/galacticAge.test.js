@@ -52,6 +52,15 @@ describe('GalacticAge', () => {
     expect(inputAge.yearsSinceJupiter(25)).toEqual(.84);
   });
 
+  test('should correctly calculate the number of years which have yet to come until a given age value', () => {
+    expect(inputAge.yearsToCome(46)).toEqual(11);
+  });
+
+
+
+
+
+
 
 
 
