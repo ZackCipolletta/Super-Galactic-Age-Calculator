@@ -52,7 +52,9 @@ export default class GalacticAge {
   }
 
   yearsYetToPassOnMercury(laterAge){
-
+    let yearsYetToPassUntilLaterAge = this.yearsSince(laterAge);
+    let yearsYetToPassOnMercury = new GalacticAge(-yearsYetToPassUntilLaterAge);
+    return yearsYetToPassOnMercury.ageOnMercury();
   }
 
 
