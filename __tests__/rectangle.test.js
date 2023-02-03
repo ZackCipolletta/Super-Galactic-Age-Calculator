@@ -1,4 +1,3 @@
-import { experiments } from 'webpack';
 import Rectangle from '../src/js/rectangle.js';
 
 describe('Rectangle', () => {
