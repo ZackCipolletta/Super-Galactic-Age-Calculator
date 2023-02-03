@@ -58,12 +58,14 @@ export default class GalacticAge {
   }
 
   yearsYetToPassOnVenus(laterAge){
-
+    let yearsYetToPassUntilLaterAge = this.yearsSince(laterAge);
+    let yearsYetToPassOnVenus = new GalacticAge(-yearsYetToPassUntilLaterAge);
+    return yearsYetToPassOnVenus.ageOnVenus();
   }
 
 
 
-  
+
 
 
 
