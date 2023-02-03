@@ -64,7 +64,9 @@ export default class GalacticAge {
   }
 
   yearsYetToPassOnMars(laterAge){
-
+    let yearsYetToPassUntilLaterAge = this.yearsSince(laterAge);
+    let yearsYetToPassOnMars = new GalacticAge(-yearsYetToPassUntilLaterAge);
+    return yearsYetToPassOnMars.ageOnMars();
   }
 
 
