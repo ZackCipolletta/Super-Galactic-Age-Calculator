@@ -10,37 +10,65 @@ function createGalacticAge(userAge) {
   return userGalacticAge;
 }
 
-function clearResponseTest(element) {
+function clearResult(element) {
   document.querySelector(element).innerText = null;
 }
 
-// function userAgeValue(ageInputElement) {
-//   return parseInt(document.querySelector(ageInputElement).value);
-// }
+function getValue(elmentId) {
+  return parseInt(document.getElementById(elmentId).value);
+}
 
 function hanldeMercuryAgeForm() {
   event.preventDefault();
-  clearResponseTest('#mercuryAge');
-  let userAgeValue = parseInt(document.querySelector('#mercuryUserAge')).value;
-  console.log(userAgeValue);
-  const userAgeOnMercury = createGalacticAge(userAgeValue).ageOnMercury();
+  clearResult('#mercuryAge');
+  let userAge = getValue('mercuryAgeInput');
+  console.log(userAge);
+  const userAgeOnMercury = createGalacticAge(userAge).ageOnMercury();
   const pTag = document.createElement("p");
   pTag.append(`Your age is: on Mercury is: ${userAgeOnMercury}.`);
   document.querySelector('#mercuryAge').append(pTag);
 }
 
-// function hanldeVenusAgeForm() {
-//   event.preventDefault();
-//   clearResponseTest('#venusAge');
-//   const userAgeOnVenus = createGalacticAge().ageOnVenus();
-//   console.log(userAgeOnVenus);
-//   const pTag = document.createElement("p");
-//   pTag.append(`Your age is: on Venus is: ${userAgeOnVenus}.`);
-//   document.querySelector('#VenusAge').append(pTag);
-// }
+function hanldeVenusAgeForm() {
+  event.preventDefault();
+  clearResult('#venusAge');
+  let userAge = getValue('venusUserAge');
+  const userAgeOnVenus = createGalacticAge(userAge).ageOnVenus();
+  console.log(userAgeOnVenus);
+  const pTag = document.createElement("p");
+  pTag.append(`Your age is: on Venus is: ${userAgeOnVenus}.`);
+  document.querySelector('#venusAge').append(pTag);
+}
+
+
+function hanldeMarsAgeForm() {
+  event.preventDefault();
+  clearResult('#marsAge');
+  let userAge = getValue('marsUserAge');
+  const userAgeOnMars = createGalacticAge(userAge).ageOnMars();
+  console.log(userAgeOnMars);
+  const pTag = document.createElement("p");
+  pTag.append(`Your age is: on Mars is: ${userAgeOnMars}.`);
+  document.querySelector('#marsAge').append(pTag);
+}
+
+function hanldeJupiterAgeForm() {
+  event.preventDefault();
+  clearResult('#jupiterAge');
+  let userAge = getValue('jupiterUserAge');
+  const userAgeOnJupiter = createGalacticAge(userAge).ageOnJupiter();
+  console.log(userAgeOnJupiter);
+  const pTag = document.createElement("p");
+  pTag.append(`Your age is: on Jupiter is: ${userAgeOnJupiter}.`);
+  document.querySelector('#jupiterAge').append(pTag);
+}
 
 window.addEventListener("load", function () {
   document.querySelector("#mercury-age-form").addEventListener("submit", hanldeMercuryAgeForm);
 
-  // document.querySelector("#venus-age-form").addEventListener("submit", hanldeVenusAgeForm);
+  document.querySelector("#venus-age-form").addEventListener("submit", hanldeVenusAgeForm);
+  
+  document.querySelector("#mars-age-form").addEventListener("submit", hanldeMarsAgeForm);
+
+  document.querySelector("#jupiter-age-form").addEventListener("submit", hanldeJupiterAgeForm);
 });
