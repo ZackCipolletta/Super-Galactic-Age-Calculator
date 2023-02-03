@@ -63,6 +63,9 @@ export default class GalacticAge {
     return yearsYetToPassOnVenus.ageOnVenus();
   }
 
+  yearsYetToPassOnMars(laterAge){
+
+  }
 
 
 
