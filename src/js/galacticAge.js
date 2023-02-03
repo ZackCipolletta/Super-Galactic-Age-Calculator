@@ -42,7 +42,9 @@ export default class GalacticAge {
   }
 
   yearsSinceJupiter(earlierAge) {
-
+    let yearsSinceEarlierAge = this.yearsSince(earlierAge);
+    let yearsSinceJupiter = new GalacticAge(yearsSinceEarlierAge);
+    return yearsSinceJupiter.ageOnJupiter();
   }
 
 
