@@ -24,8 +24,9 @@ export default class GalacticAge {
   }
 
   yearsSinceMercury(earlierAge) {
-    let yearsSince = this.age - earlierAge;
-    return Number((yearsSince / .24).toFixed(2));
+    let yearsSince = this.yearsSince(earlierAge);
+     let ageSinceMercury = new GalacticAge(yearsSince);
+     return ageSinceMercury.ageOnMercury();
   } 
 
   yearsSinceVenus(earlierAge) {
@@ -34,7 +35,8 @@ export default class GalacticAge {
   } 
 
   yearsSinceMars(earlierAge) {
-
+    let yearsSince = this.age - earlierAge;
+    return Number((yearsSince / 1.88).toFixed(2));
   } 
 
 
