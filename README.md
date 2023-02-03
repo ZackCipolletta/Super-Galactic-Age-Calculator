@@ -22,17 +22,13 @@
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-* Installing all packages with $ npm install.
-* Building the project using webpack with $ npm run build
-* Starting a development server with $ npm run start
-* Linting JS files in the src folder with $ npm run lint
-* Running tests with Jest using $ npm run test*
+* Clone repository to your desktop
+* Navigate to the top level of the directory
+* Install all packages with $ npm install.
+* Build the project using webpack with $ npm run build
+* If you wish to lint JS files in the src folder, run $ npm run lint
+* All business logic should be tested and pass Jest using $ npm run test
+* Start a development server with $ npm run start
 
 ## Known Bugs
 
