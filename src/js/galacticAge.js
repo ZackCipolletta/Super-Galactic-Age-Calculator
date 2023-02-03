@@ -16,7 +16,7 @@ export default class GalacticAge {
   }
 
   ageOnJupiter() {
-
+    return Number((this.age / 11.86).toFixed(2));
   }
 
 
