@@ -48,7 +48,9 @@ describe('GalacticAge', () => {
     expect(inputAge.yearsSinceMars(25)).toEqual(5.32);
   });
 
-
+  test('should correctly calculate the number of years which have past on Jupiter since a given age value', () => {
+    expect(inputAge.yearsSinceJupiter(25)).toEqual(.84);
+  });
 
 
 

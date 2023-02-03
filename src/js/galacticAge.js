@@ -41,6 +41,9 @@ export default class GalacticAge {
     return yearsSinceMars.ageOnMars();
   }
 
+  yearsSinceJupiter(earlierAge) {
+
+  }
 
 
 
