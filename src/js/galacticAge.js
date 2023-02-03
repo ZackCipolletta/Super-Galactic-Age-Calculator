@@ -19,8 +19,8 @@ export default class GalacticAge {
     return Number((this.age / 11.86).toFixed(2));
   }
 
-  yearsSince() {
-
+  yearsSince(earlierAge) {
+    return Number((this.age - earlierAge).toFixed(2));
   }
 
 

@@ -33,8 +33,7 @@ describe('GalacticAge', () => {
   });
 
   test('should correctly calculate the number of years which have past since a given age value', () => {
-    inputAge.yearsSince(25);
-    expect(inputAge.yearsSince()).toEqual(10);
+    expect(inputAge.yearsSince(25)).toEqual(10);
   });
 
 
