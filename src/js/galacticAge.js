@@ -4,7 +4,7 @@ export default class GalacticAge {
   }
 
   ageMercury() {
-
+    return Number((this.age / .24).toFixed(2));
   }
 
 
