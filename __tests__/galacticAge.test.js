@@ -60,7 +60,9 @@ describe('GalacticAge', () => {
     expect(inputAge.yearsYetToPassOnMercury(46)).toEqual(45.83);
   });
 
-
+  test('should correctly calculate the number of years which have yet to pass on Venus until a given age value', () => {
+    expect(inputAge.yearsYetToPassOnVenus(46)).toEqual(17.74);
+  });
 
 
 
