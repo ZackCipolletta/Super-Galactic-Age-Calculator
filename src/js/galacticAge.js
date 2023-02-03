@@ -28,6 +28,10 @@ export default class GalacticAge {
     return Number((yearsSince / .24).toFixed(2));
   } 
 
+  yearsSinceVenus(earlierAge) {
+
+  } 
+
 
 
 

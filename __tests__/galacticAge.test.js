@@ -40,6 +40,16 @@ describe('GalacticAge', () => {
     expect(inputAge.yearsSinceMercury(25)).toEqual(41.67);
   });
 
+  test('should correctly calculate the number of years which have past on Venus since a given age value', () => {
+    expect(inputAge.yearsSinceVenus(25)).toEqual(16.13);
+  });
+
+
+
+
+
+
+
   //   test('should correctly calculate whether three lengths are not a triangle', () => {
   //     const notTriangle = new Triangle(3, 9, 22);
   //     expect(notTriangle.checkType()).toEqual("not a triangle");
