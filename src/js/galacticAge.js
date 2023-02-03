@@ -29,7 +29,8 @@ export default class GalacticAge {
   } 
 
   yearsSinceVenus(earlierAge) {
-
+    let yearsSince = this.age - earlierAge;
+    return Number((yearsSince / .62).toFixed(2));
   } 
 
 
