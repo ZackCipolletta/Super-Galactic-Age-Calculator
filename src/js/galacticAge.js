@@ -3,8 +3,12 @@ export default class GalacticAge {
     this.age = age;
   }
 
-  ageMercury() {
+  ageOnMercury() {
     return Number((this.age / .24).toFixed(2));
+  }
+
+  ageOnVenus() {
+    
   }
 
 
