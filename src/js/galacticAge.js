@@ -70,7 +70,9 @@ export default class GalacticAge {
   }
 
   yearsYetToPassOnJupiter(laterAge){
-
+    let yearsYetToPassUntilLaterAge = this.yearsSince(laterAge);
+    let yearsYetToPassOnJupiter = new GalacticAge(-yearsYetToPassUntilLaterAge);
+    return yearsYetToPassOnJupiter.ageOnJupiter();
   }
 
 
