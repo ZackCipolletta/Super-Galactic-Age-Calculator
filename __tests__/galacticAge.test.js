@@ -64,9 +64,15 @@ describe('GalacticAge', () => {
     expect(inputAge.yearsYetToPassOnVenus(46)).toEqual(17.74);
   });
 
-  test('should correctly calculate the number of years which have yet to pass on Venus until a given age value', () => {
+  test('should correctly calculate the number of years which have yet to pass on Mars until a given age value', () => {
     expect(inputAge.yearsYetToPassOnMars(46)).toEqual(5.85);
   });
+
+  test('should correctly calculate the number of years which have yet to pass on Jupiter until a given age value', () => {
+    expect(inputAge.yearsYetToPassOnJupiter(46)).toEqual(.93);
+  });
+
+
 
 
 
