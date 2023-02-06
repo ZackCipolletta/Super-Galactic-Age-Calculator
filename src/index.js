@@ -18,11 +18,11 @@ function planetsArr() { // create a function which returns an array of planets
 }
 
 function appendTofunction(selectedElement, elementToAppend) {
-    return document.querySelector(selectedElement).append(elementToAppend);
+  return document.querySelector(selectedElement).append(elementToAppend);
 }
 
 
-function hanldeMercuryAgeForm() {
+function hanldeGalacticAgeForm() {
   event.preventDefault();
 
   let ageOnPlanetsFuncArr = [createGalacticAge().ageOnMercury(), createGalacticAge().ageOnVenus(), createGalacticAge().ageOnMars(), createGalacticAge().ageOnJupiter()]; // creating an array of planets and functions was the only way I found to loop through each and match them up with the correct name and HTML elements.
@@ -48,10 +48,11 @@ function handleGalacticYearsPastForm() {
     clearResult(`#${planetsArr()[i]}YearsPast`);
     const yearsPastOnX = yearsPastOnPlanetsFuncArr[i];
     const pTag = document.createElement("p");
-    pTag.append(`${yearsPastOnX} years have past on ${planetsArr()[i]} since you were ${youngerAge} on Earth.`);
+    pTag.append(`${yearsPastOnX} years have passed on ${planetsArr()[i]} since you were ${youngerAge} on Earth.`);
     appendTofunction(`#${planetsArr()[i]}YearsPast`, pTag);
   }
 }
+
 
 function handleGalacticYearsYetToPassForm() {
   event.preventDefault();
@@ -63,13 +64,13 @@ function handleGalacticYearsYetToPassForm() {
     clearResult(`#${planetsArr()[i]}YearsYet`);
     const yearsYetToPass = yearsYetToPassFuncArr[i];
     const pTag = document.createElement("p");
-    pTag.append(`${yearsYetToPass} years have yet to pass on ${planetsArr()[i]} until you are ${futureAge} on Earth.`);
+    pTag.append(`${yearsYetToPass} years will pass on ${planetsArr()[i]} before you are ${futureAge} on Earth.`);
     appendTofunction(`#${planetsArr()[i]}YearsYet`, pTag);
   }
 }
 
 window.addEventListener("load", function () {
-  document.querySelector("#galactic-age-form").addEventListener("submit", hanldeMercuryAgeForm);
+  document.querySelector("#galactic-age-form").addEventListener("submit", hanldeGalacticAgeForm);
 
   document.querySelector("#galactic-years-past-form").addEventListener("submit", handleGalacticYearsPastForm);
 

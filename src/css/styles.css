@@ -1,3 +1,16 @@
 body {
-    background-color: gray;
-  }
+  background-color: rgb(1, 0, 9);
+  /* background: url(/src/assets/images/vertical-solar-system.jpg); */
+  color: white;
+}
+
+#wholePieform {
+  position: relative;
+
+}
+
+.spacer {
+  margin: 10px;
+  margin-left: 50px;
+  width: max-content;
+}

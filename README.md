@@ -1,15 +1,11 @@
-# (Application Name)
+# Super Solar Age Calculator
 
-#### (Brief Description of Application)
+#### A website showcasing JavaScript classes, arrays and loops and utilizing user input.
 
-#### By (Your Name Here)
+#### By Zachary Cipolletta
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
 * CSS
 * HTML
 * JavaScript
@@ -17,8 +13,15 @@
 * Jest
 * Webpack
 * npm
+* ESLint
 
 ## Description
+This website uses JS classes to perform math calculation using user input inorder to convert a persons age (present, past and future) then converting that into the equivalent age on other planets.  While 10 years may have passed on earth, how many revolutions around the sun has Mercury or Mars made?
+
+I tried to reuse the methods I created earlier in the program to perform the calculations for later functionality instead of performing the same math again.  While it would have been quicker to simply find the difference between a user's current and younger age then use the same mathematical formula over and over to find the equivalent number of years on another planet, I tried to reuse as much code as possible instead of repeating myself.
+
+I attempted to do the same with the UI, but ran into an issue with calling the methods to find the number of years since a persons younger age and future age.  The quick solution was to put all formulas into an array, but it is not an elegant or clean solution.
+
 
 ## Setup/Installation Requirements
 
@@ -32,7 +35,10 @@
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* background image will nto display in live server.
+* ugly solution for UI to call muliptle methods from an array.
 
 ## License
+MIT
+
+Copyright (c) 2/5/2023 Zachary Cipolletta
