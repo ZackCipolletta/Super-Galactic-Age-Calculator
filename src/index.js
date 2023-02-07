@@ -36,8 +36,6 @@ function hanldeGalacticAgeForm() {
   }
 }
 
-
-
 function handleGalacticYearsPastForm() {
   event.preventDefault();
 
@@ -52,7 +50,6 @@ function handleGalacticYearsPastForm() {
     appendTofunction(`#${planetsArr()[i]}YearsPast`, pTag);
   }
 }
-
 
 function handleGalacticYearsYetToPassForm() {
   event.preventDefault();
